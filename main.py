@@ -47,41 +47,41 @@ while True:
     #creating condition for "R" as "Rock"
     if player_choice == "R":
         if cpu_choice == "R":
-            print("You and CPU chose 'Rock'. It's a Tie!")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - It's a Tie!")
 
         elif cpu_choice == "P":
-            print("You chose 'Rock' while the CPU chose 'Paper'. You lose.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You lose")
             cpu_wins += 1
 
         elif cpu_choice == "S":
-            print("You chose 'Rock' while the CPU chose 'Scisssors'. You WIN!!!.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You WIN!!!")
             player_wins += 1
 
     #creating condition for "P" as "Paper"
     elif player_choice == "P":
         if cpu_choice == "R":
-            print("You chose 'Paper' while the CPU chose 'Rock'. You WIN!!!.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You WIN!!!")
             player_wins += 1
 
         elif cpu_choice == "P":
-            print("You chose 'Paper' while the CPU chose 'Paper'. You Tied.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You Tied.")
 
         elif cpu_choice == "S":
-            print("You chose 'Paper' while the CPU chose 'Scissors'. You lose.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You lose.")
             cpu_wins += 1
 
     #creating condition for "S" as "Scissors"
     elif player_choice == "S":
         if cpu_choice == "R":
-            print("You chose 'Scissors' while the CPU chose 'Rock'. You lose.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You lose.")
             cpu_wins += 1
 
         elif cpu_choice == "P":
-            print("You chose 'Scissors' while the CPU chose 'Paper'. You WIN!!!.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You WIN!!!")
             player_wins += 1
 
         elif cpu_choice == "S":
-            print("You chose 'Scissors' while the CPU chose 'Scissors'. You Tied.")
+            print(f"\n Player ({player_choice}) : CPU ({cpu_choice}) - You Tied.")
     
     print("")
     print("player wins: " + str(player_wins))
